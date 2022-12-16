@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:cardElevation="7dp"
+    app:cardCornerRadius="2dp"
+    app:cardUseCompatPadding="true">
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    >
+
+    <TextView
+        android:id="@+id/foodView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="63dp"
+        android:text="Food"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toStartOf="@id/editFood"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editFood"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name of Food"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/foodView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/caloriesView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="40dp"
+        android:text="Calories"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toStartOf="@+id/editCalories"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodView" />
+
+    <EditText
+        android:id="@+id/editCalories"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Number of Calories"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/caloriesView"
+        app:layout_constraintTop_toBottomOf="@+id/editFood" />
+
+    <TextView
+        android:id="@+id/proteinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:text="Protein(g)"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toStartOf="@+id/editProtein"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/caloriesView" />
+
+    <EditText
+        android:id="@+id/editProtein"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Grams of Protein"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/proteinView"
+        app:layout_constraintTop_toBottomOf="@+id/editCalories" />
+
+
+    <TextView
+        android:id="@+id/fatView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="65dp"
+        android:text="Fat(g)"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toStartOf="@+id/editFat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/proteinView" />
+
+    <EditText
+        android:id="@+id/editFat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Grams of Fat"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fatView"
+        app:layout_constraintTop_toBottomOf="@+id/editProtein" />
+
+    <TextView
+        android:id="@+id/carbView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="35dp"
+        android:text="Carbs(g)"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toStartOf="@+id/editCarb"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fatView" />
+
+    <EditText
+        android:id="@+id/editCarb"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Grams of Carbs"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/carbView"
+        app:layout_constraintTop_toBottomOf="@+id/fatView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
